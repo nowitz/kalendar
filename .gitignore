@@ -1,0 +1,12 @@
+TO-DO.txt
+composer.lock
+/nbproject/*
+/nbproject/private/
+vendor/
+.idea/
+bower_components/
+node_modules/
+
+platforms/
+
+plugins/

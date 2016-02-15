@@ -3,8 +3,8 @@ angular.module('app')
     .factory('MessageFactory', function () {
 
         var windows = [
-            {id: 0, status: true, beforeSide: "1", afterSide: "test <strong>text</strong>  tesxtsda ", img: "./img/icon/test.png", time:"Feb 08 2016"},
-            {id: 1, status: true, beforeSide: "12", afterSide: "text1", img: "./img/icon/test.png", time:"Feb 07 2016"},
+            {id: 0, status: true, beforeSide: "1", afterSide: "test <strong>text</strong>  tesxtsda ", img: "./img/icon/talk.png", time:"Feb 08 2016"},
+            {id: 1, status: true, beforeSide: "12", afterSide: "text1", img: "./img/icon/trip.png", time:"Feb 07 2016"},
             {id: 2, status: true, beforeSide: "19", afterSide: "text2", img: "", time:""},
             {id: 3, status: true, beforeSide: "11", afterSide: "text3", time:""},
             {id: 4, status: true, beforeSide: "7", afterSide: "text4", time:""},
@@ -39,7 +39,7 @@ angular.module('app')
             {id: 6, status: true, beforeSide: "20", afterSide: "Miluju tvojí „nakažlivou „chuť jít do všech soutěží. :-D", img: "", time:""},
             {id: 7, status: true, beforeSide: "17", afterSide: "Miluju tě za to, že ti můžu říct úplně všechno, svěřit se ti. :-)", img: "", time:""},
             {id: 8, status: true, beforeSide: "5", afterSide: "Miluju tě za to, že jsi ve mně probudila chuť plánovat budoucnost. :-*", img: "", time:""},
-            {id: 9, status: true, beforeSide: "24", afterSide: "Miluju tě pro tvoji energii, který máš na rozdávání. Za to co vše zvládneš. :-)", img: "", time:""},
+            {id: 9, status: true, beforeSide: "24", afterSide: "Miluju tě pro tvoji energii, kterou máš na rozdávání. Za to co vše zvládneš. :-)", img: "", time:""},
             {id: 10, status: true, beforeSide: "10", afterSide: "Miluju tě za lásku k dětem a smysl pro rodinu. :-*", img: "", time:""},
             {id: 11, status: true, beforeSide: "18", afterSide: "Miluju tě za tvoji trpělivost, kterou máš semnou (ve 3. a 6. pádě se píše MNĚ). :-D", img: "", time:""},
             {id: 12, status: true, beforeSide: "16", afterSide: "Miluju tě za to, že jsi mi vždy ochotná pomoct. :-)", img: "", time:""},

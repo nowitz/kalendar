@@ -43,7 +43,7 @@ angular.module('app')
                 id: 1,
                 status: false,
                 beforeSide: "12",
-                afterSide: "Miluju tě za tvoji trpělivost, kterou máš semnou (ve 3. a 6. pádě se píše MNĚ). :-D",
+                afterSide: "Miluju tě za tvoji trpělivost, kterou máš semnou (tumorouland). :-D",
                 img: "./img/icon/language.png",
                 time: "Feb 17 2016"
             },

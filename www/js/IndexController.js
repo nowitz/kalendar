@@ -9,7 +9,6 @@ angular.module('app')
             var systemTime = new Date().toDateString().split(" ");
             var myTime = $scope.window[id].time.split(" ");
 
-            /*
             angular.forEach($scope.window, function (value, key) {
                 if (value.id == id) {
                     $scope.window[id].status = true;
@@ -20,8 +19,8 @@ angular.module('app')
                 }
             });
             $scope.flipped = !$scope.flipped;
-            */
 
+/*
             if(systemTime[1] === myTime[0] && systemTime[2] === myTime[1] && systemTime[3] === myTime[2]){
                 angular.forEach($scope.window, function (value, key) {
                     if (value.id == id) {
@@ -40,7 +39,7 @@ angular.module('app')
                     duration: 3500
                 });
             }
-
+*/
         };
 
 

@@ -18,6 +18,7 @@
     height: 16.6%;
     display: flex;
 
+    /*
     .window {
       border: solid 1px;
       background-color: rgba(255, 245, 250, 0.05);
@@ -46,7 +47,7 @@
         }
       }
 
-    }
+    }*/
   }
 }
 .messageContent{
@@ -60,3 +61,61 @@
 }
 
 
+
+
+.transition (@value1,@value2:X,...) { @value: ~`"@{arguments}".replace(/[\[\]]|\,\sX/g, '')`; -webkit-transition: @value; -moz-transition: @value; -ms-transition: @value; -o-transition: @value; transition: @value; }
+.transform (@value1,@value2:X,...) { @value: ~`"@{arguments}".replace(/[\[\]]|\,\sX/g, '')`; transform:@value; -ms-transform:@value; -webkit-transform:@value; -o-transform:@value; -moz-transform:@value; }
+.transform-style(@style:preserve-3d) { transform-style:@style; -webkit-transform-style:@style; -moz-transform-style:@style; -ms-transform-style:@style; }
+.backface-visibility-hidden { backface-visibility:hidden; -webkit-backface-visibility:hidden; }
+.perspective(@amount: 1000px) { perspective:@amount; -webkit-perspective:@amount; -moz-perspective:@amount; -ms-perspective:@amount; }
+
+flipper {
+  border: solid 1px;
+  width: 25%;
+  margin: 2px 2px 2px 2px;
+  border-radius: 3px;
+  .perspective;
+
+  >div.flipper { float:left; width:100%; height:100%; position:relative; .transform-style(preserve-3d);
+
+    .front, .back { float:left; display:block; width:100%; height:100%; .backface-visibility-hidden; position:absolute; top:0; left:0; .transform-style(preserve-3d); .transition(-webkit-transform ease 1000ms); .transition(transform ease 1000ms); }
+
+    .front {
+      font-size: 200%;
+      padding-left: 35%;
+      padding-top: 45%;
+    }
+
+    .back {
+        background: @backgroundColorBack;
+        height: 15.6vh;
+      }
+
+    }
+  }
+
+
+.myimg{
+  width: 90%;
+  margin: 10% 10% 10% 5%;
+}
+
+flipper[horizontal] {
+  .front { .transform(rotateY(0deg)); }
+  .back { .transform(rotateY(-180deg)); }
+
+  div.flipper.flipped {
+    .front { .transform(rotateY(180deg)); }
+    .back { .transform(rotateY(0deg)); }
+  }
+}
+
+flipper[vertical] {
+  .front { .transform(rotateX(0deg)); }
+  .back { .transform(rotateX(-180deg)); }
+
+  div.flipper.flipped {
+    .front { .transform(rotateX(180deg)); }
+    .back { .transform(rotateX(0deg)); }
+  }
+}

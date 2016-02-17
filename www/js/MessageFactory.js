@@ -12,7 +12,7 @@ angular.module('app')
          {id: 6, status: true, beforeSide: "20", afterSide: "Miluju tvůj zadek a pravý prso víc než to levý. :-D :-P", img: "./img/icon/sex.png", time:"Mar 18 2016"},
          {id: 7, status: true, beforeSide: "17", afterSide: "Miluju tě za to, že mě dokážeš vždy něčím překvapit. :-)", img: "./img/icon/surprise.png", time:"Mar 15 2016"},
          {id: 8, status: true, beforeSide: "5",  afterSide: "Miluju tvoje sbírání všemožných kartiček. :-D", img: "./img/icon/card.png", time:"Mar 03 2016"},
-         {id: 9, status: true, beforeSide: "24", afterSide: "Díky tobě vím, co znamená opravdu MILOVAT UPŘÍMNOU LÁSKOU, na základě toho, že si prošla jak krásnými tak i škaredými zážitky a všechno to překonala. Miluju Tě", img: "./img/icon/love.png", time:"Mar 22 2016"},
+         {id: 9, status: true, beforeSide: "24", afterSide: "Díky tobě vím, co znamená opravdu MILOVAT UPŘÍMNOU LÁSKOU a to díky tomu, že si prošla jak krásnými tak i škaredými zážitky a všechno to překonala. Miluju Tě", img: "./img/icon/love.png", time:"Mar 22 2016"},
          {id: 10, status: true, beforeSide: "10", afterSide: "Miluju tě pro tvoji energii, kterou máš na rozdávání. Za to co vše zvládneš. :-)", img: "./img/icon/energy.png", time:"Mar 08 2016"},
          {id: 11, status: true, beforeSide: "18", afterSide: "Miluju tvoje mluvení ze spaní. :-D", img: "./img/icon/sleep.png", time:"Mar 16 2016"},
          {id: 12, status: true, beforeSide: "16", afterSide: "Miluju tě za dlouhodobé boje o ježíška, psa a mateřskou, na kterou stejně půjdu já. :-P :-D", img: "./img/icon/fight.png", time:"Mar 14 2016"},
@@ -35,7 +35,7 @@ angular.module('app')
                 id: 0,
                 status: false,
                 beforeSide: "1",
-                afterSide: "Miluju tvůj <div class='asd'>smysl</div> pro detail (systém v barvičkách). :-)",
+                afterSide: "Miluju tvůj <span class='asd'>smysl</span> pro detail (systém v barvičkách). :-)",
                 img: "./img/icon/colors.png",
                 time: "Feb 17 2016"
             },
@@ -43,7 +43,7 @@ angular.module('app')
                 id: 1,
                 status: false,
                 beforeSide: "12",
-                afterSide: "Miluju tě za tvoji trpělivost, kterou máš semnou (tumorouland). :-D",
+                afterSide: "Miluju tě za tvoji trpělivost, kterou semnou máš (tumorouland). :-D",
                 img: "./img/icon/language.png",
                 time: "Feb 17 2016"
             },
@@ -51,7 +51,7 @@ angular.module('app')
                 id: 2,
                 status: false,
                 beforeSide: "19",
-                afterSide: "Miluju tě za pocit klidu, který díky tobě mám, když jsme spolu. :-*",
+                afterSide: "Miluju tě za pocit klidu, který mám díky tobě, když jsme spolu. :-*",
                 img: "./img/icon/peace.png",
                 time: "Mar 17 2016"
             },
@@ -107,7 +107,7 @@ angular.module('app')
                 id: 9,
                 status: false,
                 beforeSide: "24",
-                afterSide: "Díky tobě vím, co znamená opravdu MILOVAT UPŘÍMNOU LÁSKOU, na základě toho, že si prošla jak krásnými tak i škaredými zážitky a všechno to překonala. Miluju Tě",
+                afterSide: "Díky tobě vím, co znamená opravdu MILOVAT UPŘÍMNOU LÁSKOU a to díky tomu, že si prošla jak krásnými tak i škaredými zážitky a všechno to překonala. Miluju Tě",
                 img: "./img/icon/love.png",
                 time: "Mar 22 2016"
             },
@@ -115,7 +115,7 @@ angular.module('app')
                 id: 10,
                 status: false,
                 beforeSide: "10",
-                afterSide: "Miluju tě pro tvoji energii, kterou máš na rozdávání. Za to co vše zvládneš. :-)",
+                afterSide: "Miluju tě pro tvoji energii, který máš na rozdávání. Za to co vše zvládneš. :-)",
                 img: "./img/icon/energy.png",
                 time: "Mar 08 2016"
             },
@@ -171,7 +171,7 @@ angular.module('app')
                 id: 17,
                 status: false,
                 beforeSide: "23",
-                afterSide: "Pokud jsi poctivě otvírala okýnko každý den, tak ses dostala až k téhle zprávě. :-) Tahle zpráva ti pouze napoví, že to nejdůležitější okýnko si otevřeš až zítra. :-D :-*",
+                afterSide: "Pokud jsi poctivě otvírala okýnko každý den, tak jsi se dostala až k téhle zprávě. :-) Tahle zpráva ti pouze napoví, že to nejdůležitější okýnko si otevřeš až zítra. :-D :-*",
                 img: "./img/icon/nothing.png",
                 time: "Mar 21 2016"
             },

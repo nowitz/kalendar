@@ -19,6 +19,9 @@
 .myload {
   font-size: 170%;
   text-align: center;
+  width: 90%;
+  padding-left: 5%;
+  line-height: 1.2;
 }
 .asd {
   color: red;

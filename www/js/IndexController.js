@@ -15,37 +15,51 @@ angular.module('app')
 
             angular.forEach($scope.window, function (value, key) {
                 if (value.id == id) {
-                    $scope.window[id].status = true;
-                    localStorage.setItem('window', JSON.stringify($scope.window));
-                    setTimeout(function () {
+                    if($scope.window[id].status == false){
+                        $scope.window[id].status = true;
+                        localStorage.setItem('window', JSON.stringify($scope.window));
+                        setTimeout(function () {
+                            $ionicLoading.show({
+                                template: '<div id="a" ng-click="hide()" class="myload">'+MessageFactory.get(id).afterSide+'</div>',
+                                scope: $scope
+                            });
+                        }, 1500);
+                        $scope.flipped = !$scope.flipped;
+                    }else{
                         $ionicLoading.show({
                             template: '<div ng-click="hide()" class="myload">'+MessageFactory.get(id).afterSide+'</div>',
                             scope: $scope
                         });
-                    }, 1500);
+                    }
                 }
             });
-            $scope.flipped = !$scope.flipped;
 
 /*
             if(systemTime[1] === myTime[0] && systemTime[2] === myTime[1] && systemTime[3] === myTime[2]){
                 angular.forEach($scope.window, function (value, key) {
                     if (value.id == id) {
-                        $scope.window[id].status = true;
-                        localStorage.setItem('window', JSON.stringify($scope.window));
-                         setTimeout(function () {
-                             $ionicLoading.show({
-                             template: '<div ng-click="hide()" class="myload">'+MessageFactory.get(id).afterSide+'</div>',
-                             scope: $scope
-                             });
-                         }, 1500);
+                        if($scope.window[id].status == false){
+                            $scope.window[id].status = true;
+                            localStorage.setItem('window', JSON.stringify($scope.window));
+                            setTimeout(function () {
+                                $ionicLoading.show({
+                                    template: '<div id="a" ng-click="hide()" class="myload">'+MessageFactory.get(id).afterSide+'</div>',
+                                    scope: $scope
+                                });
+                            }, 1500);
+                            $scope.flipped = !$scope.flipped;
+                        }else{
+                            $ionicLoading.show({
+                                template: '<div ng-click="hide()" class="myload">'+MessageFactory.get(id).afterSide+'</div>',
+                                scope: $scope
+                            });
+                        }
                     }
                 });
-                $scope.flipped = !$scope.flipped;
             }else{
                 var x = Math.floor((Math.random() * 3) + 1);
                 $ionicLoading.show({
-                    template: ErrorFactory.get(x),
+                    template: '<div class="myload">'+ErrorFactory.get(x)+'</div>',
                     duration: 3500
                 });
             }

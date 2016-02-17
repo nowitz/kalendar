@@ -7,7 +7,6 @@ angular.module('app', ['ionic'])
     .run(function ($ionicPlatform, MessageFactory, $rootScope) {
 
         var windows = localStorage.getItem('window') === null ? MessageFactory.all() : JSON.parse(localStorage.getItem('window'));
-        //localStorage.setItem('window', JSON.stringify(windows));
         $rootScope.windows = windows;
 
         $ionicPlatform.ready(function () {

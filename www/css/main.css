@@ -16,8 +16,12 @@
   background-color: #007aff;
   padding: 10% 20% 20% 10%;
 }
-.messageContent .message {
-  font-size: 200%;
+.myload {
+  font-size: 170%;
+  text-align: center;
+}
+.asd {
+  color: red;
 }
 .backface-visibility-hidden {
   backface-visibility: hidden;

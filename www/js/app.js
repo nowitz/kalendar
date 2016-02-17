@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 angular.module('app', ['ionic'])
-    .run(function ($ionicPlatform, MessageFactory, $rootScope,$timeout) {
+    .run(function ($ionicPlatform, MessageFactory, $rootScope) {
 
         var windows = localStorage.getItem('window') === null ? MessageFactory.all() : JSON.parse(localStorage.getItem('window'));
         //localStorage.setItem('window', JSON.stringify(windows));
@@ -25,19 +25,5 @@ angular.module('app', ['ionic'])
                 StatusBar.styleDefault();
             }
         });
-/*
-            $(document).ready(function () {
-                $(".window").flip({
-                    axis: 'y',
-                    trigger: 'manual',
-                    speed: 1
-                });
-                $(".window").each(function (index) {
-                    //console.log(index + ": " + $(this).text());
-                    if (windows[index].status === false) {
-                        $("#" + index.toString()).flip(true);
-                    }
-                });
-            });
-*/
+
     });

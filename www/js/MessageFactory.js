@@ -35,7 +35,7 @@ angular.module('app')
                 id: 0,
                 status: false,
                 beforeSide: "1",
-                afterSide: "Miluju tvůj smysl pro detail (systém v barvičkách). :-)",
+                afterSide: "Miluju tvůj <div class='asd'>smysl</div> pro detail (systém v barvičkách). :-)",
                 img: "./img/icon/colors.png",
                 time: "Feb 17 2016"
             },

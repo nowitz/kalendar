@@ -1,9 +1,13 @@
 'user strict';
 angular.module('app')
-    .controller('IndexController', function ($scope, $rootScope, ModalService, $ionicLoading, ErrorFactory) {
+    .controller('IndexController', function ($scope, $rootScope, $ionicLoading, ErrorFactory, $ionicPopup, MessageFactory) {
 
         $scope.window = $rootScope.windows;
        // $scope.flipped = false;
+
+        $scope.hide = function(){
+            $ionicLoading.hide();
+        };
 
         $scope.flip = function (id) {
             var systemTime = new Date().toDateString().split(" ");
@@ -14,7 +18,10 @@ angular.module('app')
                     $scope.window[id].status = true;
                     localStorage.setItem('window', JSON.stringify($scope.window));
                     setTimeout(function () {
-                        ModalService.showMessage(id);
+                        $ionicLoading.show({
+                            template: '<div ng-click="hide()" class="myload">'+MessageFactory.get(id).afterSide+'</div>',
+                            scope: $scope
+                        });
                     }, 1500);
                 }
             });
@@ -26,9 +33,12 @@ angular.module('app')
                     if (value.id == id) {
                         $scope.window[id].status = true;
                         localStorage.setItem('window', JSON.stringify($scope.window));
-                        setTimeout(function () {
-                            ModalService.showMessage(id);
-                        }, 1500);
+                         setTimeout(function () {
+                             $ionicLoading.show({
+                             template: '<div ng-click="hide()" class="myload">'+MessageFactory.get(id).afterSide+'</div>',
+                             scope: $scope
+                             });
+                         }, 1500);
                     }
                 });
                 $scope.flipped = !$scope.flipped;

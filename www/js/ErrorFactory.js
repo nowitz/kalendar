@@ -4,7 +4,7 @@ angular.module('app')
 
         var errors = [
             {id: 0, message: "Zlobíš zlato! :-D"},
-            {id: 1, message: "Ty nevíš co je za den? :-P"},
+            {id: 1, message: "Ty nevíš co je dneska za den? :-P"},
             {id: 2, message: "Ale no tak, nepodváděj! :-("},
             {id: 3, message: "Copak nevíš, že se nemá předbíhat? :-|"},
             {id: 4, message: ""},

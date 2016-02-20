@@ -45,7 +45,7 @@ angular.module('app')
                 beforeSide: "12",
                 afterSide: "Miluju tě za tvoji trpělivost, kterou semnou máš (tumorouland). :-D",
                 img: "./img/icon/language.png",
-                time: "Feb 17 2016"
+                time: "Mar 10 2016"
             },
             {
                 id: 2,
@@ -67,7 +67,7 @@ angular.module('app')
                 id: 4,
                 status: false,
                 beforeSide: "7",
-                afterSide: "Miluju tvojí „nakažlivou „chuť jít do všech soutěží. :-D",
+                afterSide: "Miluju tvojí „nakažlivou„ chuť jít do všech soutěží. :-D",
                 img: "./img/icon/competition.png",
                 time: "Mar 05 2016"
             },
@@ -171,7 +171,7 @@ angular.module('app')
                 id: 17,
                 status: false,
                 beforeSide: "23",
-                afterSide: "Pokud jsi poctivě otvírala okýnko každý den, tak jsi se dostala až k téhle zprávě. :-) Tahle zpráva ti pouze napoví, že to nejdůležitější okýnko si otevřeš až zítra. :-D :-*",
+                afterSide: "Tahle zpráva ti pouze napoví, že to nejdůležitější okýnko si otevřeš až zítra. :-D :-*",
                 img: "./img/icon/nothing.png",
                 time: "Mar 21 2016"
             },
@@ -232,7 +232,7 @@ angular.module('app')
                 beforeSide: "1",
                 afterSide: "Miluju tvůj <span class='asd'>smysl</span> pro detail (systém v barvičkách). :-)",
                 img: "./img/icon/colors.png",
-                time: "Feb 17 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 1,
@@ -240,7 +240,7 @@ angular.module('app')
                 beforeSide: "12",
                 afterSide: "Miluju tě za tvoji trpělivost, kterou semnou máš (tumorouland). :-D",
                 img: "./img/icon/language.png",
-                time: "Feb 17 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 2,
@@ -262,7 +262,7 @@ angular.module('app')
                 id: 4,
                 status: false,
                 beforeSide: "7",
-                afterSide: "Miluju tvojí „nakažlivou „chuť jít do všech soutěží. :-D",
+                afterSide: "Miluju tvojí „nakažlivou„ chuť jít do všech soutěží. :-D",
                 img: "./img/icon/competition.png",
                 time: "Mar 05 2016"
             },
@@ -360,13 +360,13 @@ angular.module('app')
                 beforeSide: "3",
                 afterSide: "Miluju to, jak se dokážeš přitulit. Hlavně že vydržíš moje tulení. :-D",
                 img: "./img/icon/hug.png",
-                time: "Feb 17 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 17,
                 status: false,
                 beforeSide: "23",
-                afterSide: "Pokud jsi poctivě otvírala okýnko každý den, tak jsi se dostala až k téhle zprávě. :-) Tahle zpráva ti pouze napoví, že to nejdůležitější okýnko si otevřeš až zítra. :-D :-*",
+                afterSide: "Tahle zpráva ti pouze napoví, že to nejdůležitější okýnko si otevřeš až zítra. :-D :-*",
                 img: "./img/icon/nothing.png",
                 time: "Mar 21 2016"
             },
@@ -400,7 +400,7 @@ angular.module('app')
                 beforeSide: "2",
                 afterSide: "Miluju tvoje šibalské oči. Čertíky co v nich máš. :-P",
                 img: "./img/icon/eye.png",
-                time: "Feb 17 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 22,

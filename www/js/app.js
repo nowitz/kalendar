@@ -7,7 +7,11 @@ angular.module('app', ['ionic'])
     .run(function ($ionicPlatform, MessageFactory, $rootScope) {
 
         var windows = localStorage.getItem('window') === null ? MessageFactory.all() : JSON.parse(localStorage.getItem('window'));
+        var count = localStorage.getItem('count') === null ? 0 : JSON.parse(localStorage.getItem('count'));
+        var finish = localStorage.getItem('finish') === null ? true : JSON.parse(localStorage.getItem('finish'));
         $rootScope.windows = windows;
+        $rootScope.count = count;
+        $rootScope.finish = finish;
 
         $ionicPlatform.ready(function () {
             if (window.cordova && window.cordova.plugins.Keyboard) {

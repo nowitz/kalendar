@@ -15,6 +15,7 @@ angular.module('app')
             var systemTime = new Date().toDateString().split(" ");
             var myTime = $scope.window[id].time.split(" ");
 /*********************************************************************/
+            /*
             angular.forEach($scope.window, function (value, key) {
                 if (value.id == id) {
                     if($scope.window[id].status == false && finish === true){
@@ -35,7 +36,7 @@ angular.module('app')
                         }
                     }else if(finish === false){ //pokud jsem u 24. okynka a nebyly pred tim otevreny vsechny
                         $ionicLoading.show({
-                            template: '<div ng-click="hide()" class="myload">'+"A máme tu problém! :-( Ty jsi určitě zapomněla otevřít každý den jedno okýnko viď? Z toho Honzík nebude mít radost. Pokud se chceš dozvědět, co se pod ním skrývá, tak se ho budeš muset sama zeptat. :-)"+'</div>',
+                            template: '<div ng-click="hide()" class="myload">'+"A máme tu problém!<span style='color:red'> :-( </span>Ty jsi určitě zapomněla otevřít každý den jedno okýnko viď? Z toho Honzík nebude mít radost. Pokud se chceš dozvědět, co se pod ním skrývá, tak se ho budeš muset zeptat sama. :-)"+'</div>',
                             scope: $scope
                         });
                     }
@@ -48,8 +49,9 @@ angular.module('app')
                     }
                 }
             });
+            */
 /******************************************************************************/
-/*
+
             //pokud kliknu na okno s aktualnim(dnesnim) datumem
             if(systemTime[1] === myTime[0] && systemTime[2] === myTime[1] && systemTime[3] === myTime[2]){
                 angular.forEach($scope.window, function (value, key) {
@@ -72,7 +74,7 @@ angular.module('app')
                             }
                         }else if(finish === false){ //pokud jsem u 24. okynka a nebyly pred tim otevreny vsechny
                             $ionicLoading.show({
-                                template: '<div ng-click="hide()" class="myload">'+"A máme tu problém! :-( Ty jsi určitě zapomněla otevřít každý den jedno okýnko viď? Z toho Honzík nebude veselej. Pokud se chceš dozvědět, co pod ním skrývá, tak se ho budeš muset zeptat sama. :-)"+'</div>',
+                                template: '<div ng-click="hide()" class="myload">'+"A máme tu problém!<span style='color:red'> :-( </span>Ty jsi určitě zapomněla otevřít každý den jedno okýnko viď? Z toho Honzík nebude mít radost. Pokud se chceš dozvědět, co se pod ním skrývá, tak se ho budeš muset zeptat sama. :-)"+'</div>',
                                 scope: $scope
                             });
                         }
@@ -108,7 +110,7 @@ angular.module('app')
                     }
                 });
             }
-*/
+
         };
 
 

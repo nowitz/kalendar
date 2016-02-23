@@ -29,13 +29,13 @@ angular.module('app')
          {id: 23, status: true, beforeSide: "8", afterSide: "Miluju tě za to, že ti můžu říct úplně všechno, svěřit se ti. :-)", img: "./img/icon/talk.png", time:"Mar 06 2016"}
          ];
          */
-/*
+
         var windows = [
             {
                 id: 0,
                 status: false,
                 beforeSide: "1",
-                afterSide: "Miluju tvůj <span class='asd'>smysl</span> pro detail (systém v barvičkách). :-)",
+                afterSide: "Miluju tvůj smysl pro detail (systém v barvičkách). :-)",
                 img: "./img/icon/colors.png",
                 time: "Feb 28 2016"
             },
@@ -224,13 +224,14 @@ angular.module('app')
                 time: "Mar 06 2016"
             }
         ];
-        */
+
+        /*
         var windows = [
             {
                 id: 0,
                 status: false,
                 beforeSide: "1",
-                afterSide: "Miluju tvůj <span class='asd'>smysl</span> pro detail (systém v barvičkách). :-)",
+                afterSide: "Miluju tvůj smysl pro detail (systém v barvičkách). :-)",
                 img: "./img/icon/colors.png",
                 time: "Feb 20 2016"
             },
@@ -248,7 +249,7 @@ angular.module('app')
                 beforeSide: "19",
                 afterSide: "Miluju tě za pocit klidu, který mám díky tobě, když jsme spolu. :-*",
                 img: "./img/icon/peace.png",
-                time: "Mar 17 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 3,
@@ -256,7 +257,7 @@ angular.module('app')
                 beforeSide: "11",
                 afterSide: "Miluju tě za lásku k dětem a smysl pro rodinu. :-*",
                 img: "./img/icon/family.png",
-                time: "Mar 09 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 4,
@@ -264,7 +265,7 @@ angular.module('app')
                 beforeSide: "7",
                 afterSide: "Miluju tvojí „nakažlivou„ chuť jít do všech soutěží. :-D",
                 img: "./img/icon/competition.png",
-                time: "Mar 05 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 5,
@@ -272,7 +273,7 @@ angular.module('app')
                 beforeSide: "6",
                 afterSide: "Miluju tě za to, že nejsi pro mě jenom přítelkyně, ale i nejlepší kamarádka, hvězda a sladkůstka. :-*",
                 img: "./img/icon/star.png",
-                time: "Mar 04 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 6,
@@ -280,7 +281,7 @@ angular.module('app')
                 beforeSide: "20",
                 afterSide: "Miluju tvůj zadek a pravý prso víc než to levý. :-D :-P",
                 img: "./img/icon/sex.png",
-                time: "Mar 18 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 7,
@@ -288,7 +289,7 @@ angular.module('app')
                 beforeSide: "17",
                 afterSide: "Miluju tě za to, že mě dokážeš vždy něčím překvapit. :-)",
                 img: "./img/icon/surprise.png",
-                time: "Mar 15 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 8,
@@ -296,7 +297,7 @@ angular.module('app')
                 beforeSide: "5",
                 afterSide: "Miluju tvoje sbírání všemožných kartiček. :-D",
                 img: "./img/icon/card.png",
-                time: "Mar 03 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 9,
@@ -304,7 +305,7 @@ angular.module('app')
                 beforeSide: "24",
                 afterSide: "Díky tobě vím, co znamená opravdu MILOVAT UPŘÍMNOU LÁSKOU a to díky tomu, že si prošla jak krásnými tak i škaredými zážitky a všechno to překonala. Miluju Tě",
                 img: "./img/icon/love.png",
-                time: "Mar 22 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 10,
@@ -312,7 +313,7 @@ angular.module('app')
                 beforeSide: "10",
                 afterSide: "Miluju tě pro tvoji energii, který máš na rozdávání. Za to co vše zvládneš. :-)",
                 img: "./img/icon/energy.png",
-                time: "Mar 08 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 11,
@@ -320,7 +321,7 @@ angular.module('app')
                 beforeSide: "18",
                 afterSide: "Miluju tvoje mluvení ze spaní. :-D",
                 img: "./img/icon/sleep.png",
-                time: "Mar 16 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 12,
@@ -328,7 +329,7 @@ angular.module('app')
                 beforeSide: "16",
                 afterSide: "Miluju tě za dlouhodobé boje o ježíška, psa a mateřskou, na kterou stejně půjdu já. :-P :-D",
                 img: "./img/icon/fight.png",
-                time: "Mar 14 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 13,
@@ -336,7 +337,7 @@ angular.module('app')
                 beforeSide: "13",
                 afterSide: "Miluju tě za to, že jsi mi vždy ochotná pomoct. :-)",
                 img: "./img/icon/help.png",
-                time: "Mar 11 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 14,
@@ -344,7 +345,7 @@ angular.module('app')
                 beforeSide: "4",
                 afterSide: "Miluju tě za to, že dokážeš naplánovat jak krátký výlet tak i 2 měsíční dovolenou. :-)",
                 img: "./img/icon/trip.png",
-                time: "Mar 02 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 15,
@@ -352,7 +353,7 @@ angular.module('app')
                 beforeSide: "21",
                 afterSide: "Miluju tě za to, že jsi mi v Austrálii četla farmačku i přesto že víš, že mi to stejně nic neřekne a že si to stejně nejspíš nebudu pamatovat. :-D",
                 img: "./img/icon/pharmacy.png",
-                time: "Mar 19 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 16,
@@ -368,7 +369,7 @@ angular.module('app')
                 beforeSide: "23",
                 afterSide: "Tahle zpráva ti pouze napoví, že to nejdůležitější okýnko si otevřeš až zítra. :-D :-*",
                 img: "./img/icon/nothing.png",
-                time: "Mar 21 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 18,
@@ -376,7 +377,7 @@ angular.module('app')
                 beforeSide: "9",
                 afterSide: "Miluju tě za to, že jsi ve mně probudila chuť plánovat budoucnost. :-*",
                 img: "./img/icon/future.png",
-                time: "Mar 07 2016"
+                time: "Feb 20 2016"
             },
             {
                 id: 19,
@@ -384,7 +385,7 @@ angular.module('app')
                 beforeSide: "15",
                 afterSide: "Miluju tě za tvoji chuť do vaření a pečení. :-D",
                 img: "./img/icon/cook.png",
-                time: "Mar 13 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 20,
@@ -408,7 +409,7 @@ angular.module('app')
                 beforeSide: "14",
                 afterSide: "Miluju tě za to, že mě děláš lepším člověkem, přítelem. :-*",
                 img: "./img/icon/better.png",
-                time: "Mar 12 2016"
+                time: "Feb 21 2016"
             },
             {
                 id: 23,
@@ -416,10 +417,10 @@ angular.module('app')
                 beforeSide: "8",
                 afterSide: "Miluju tě za to, že ti můžu říct úplně všechno, svěřit se ti. :-)",
                 img: "./img/icon/talk.png",
-                time: "Mar 06 2016"
+                time: "Feb 20 2016"
             }
         ];
-
+*/
         return {
             all: function () {
                 return windows;

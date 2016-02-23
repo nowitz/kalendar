@@ -60,18 +60,25 @@ angular.module('app')
                             //console.log("dneska prvne");
                             $scope.window[id].status = true;
                             localStorage.setItem('window', JSON.stringify($scope.window));
-                            localStorage.setItem('count', JSON.stringify(count++));
+                            count = count + 1;
+                            localStorage.setItem('count', JSON.stringify(count));
                             $ionicLoading.show({
                                 template: '<div ng-click="hide()" class="myload">'+MessageFactory.get(id).afterSide+'</div>',
                                 scope: $scope
                             });
                             $scope.flipped = !$scope.flipped;
 
-                            //fixme doresit 24 - pokud ajaj tak nesmi jit otevrit - DORESINO SNAD
+                            //fixme pokud ajaj a 23 neni otevrena vse ok, pokud ji chci otevrit znova ten stejny den tak vyskoci ajaj okno - DORESINO!!!
+                            //alert(value.beforeSide + " - "+ count)
                             if(parseInt(value.beforeSide) === 23 && parseInt(value.beforeSide) !== count){
                                 finish = false;
                                 localStorage.setItem('finish', JSON.stringify(finish));
                             }
+                        }else if(parseInt(value.beforeSide) === 23 && finish === false){ //pokud jsem u 23. okynka a bylo ajaj a bylo otevreny
+                            $ionicLoading.show({
+                                template: '<div ng-click="hide()" class="myload">'+MessageFactory.get(id).afterSide+'</div>',
+                                scope: $scope
+                            });
                         }else if(finish === false){ //pokud jsem u 24. okynka a nebyly pred tim otevreny vsechny
                             $ionicLoading.show({
                                 template: '<div ng-click="hide()" class="myload">'+"A máme tu problém!<span style='color:red'> :-( </span>Ty jsi určitě zapomněla otevřít každý den jedno okýnko viď? Z toho Honzík nebude mít radost. Pokud se chceš dozvědět, co se pod ním skrývá, tak se ho budeš muset zeptat sama. :-)"+'</div>',

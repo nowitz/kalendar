@@ -62,16 +62,16 @@ flipper > div.flipper .back {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform ease 1000ms;
-  -moz-transition: -webkit-transform ease 1000ms;
-  -ms-transition: -webkit-transform ease 1000ms;
-  -o-transition: -webkit-transform ease 1000ms;
-  transition: -webkit-transform ease 1000ms;
-  -webkit-transition: transform ease 1000ms;
-  -moz-transition: transform ease 1000ms;
-  -ms-transition: transform ease 1000ms;
-  -o-transition: transform ease 1000ms;
-  transition: transform ease 1000ms;
+  -webkit-transition: -webkit-transform ease 1500ms;
+  -moz-transition: -webkit-transform ease 1500ms;
+  -ms-transition: -webkit-transform ease 1500ms;
+  -o-transition: -webkit-transform ease 1500ms;
+  transition: -webkit-transform ease 1500ms;
+  -webkit-transition: transform ease 1500ms;
+  -moz-transition: transform ease 1500ms;
+  -ms-transition: transform ease 1500ms;
+  -o-transition: transform ease 1500ms;
+  transition: transform ease 1500ms;
 }
 flipper > div.flipper .front {
   font-size: 200%;

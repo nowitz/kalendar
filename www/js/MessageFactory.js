@@ -171,8 +171,8 @@ angular.module('app')
                 id: 17,
                 status: false,
                 beforeSide: "23",
-                afterSide: "Tahle zpráva ti pouze napoví, že to nejdůležitější okýnko si otevřeš až zítra. :-D :-*",
-                img: "./img/icon/nothing.png",
+                afterSide: "Miluju tě pro tvojí schopnost řídit auto. :-) I kdybych měl Ferrari, tak bych se ti ho nebál půjčit. :-D",
+                img: "./img/icon/car.png",
                 time: "Mar 21 2016"
             },
             {

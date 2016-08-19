@@ -14,8 +14,8 @@ angular.module('app')
         $scope.flip = function (id) {
             var systemTime = new Date().toDateString().split(" ");
             var myTime = $scope.window[id].time.split(" ");
-/*********************************************************************/
-            /*
+/************************* ODBLOKOVANI ZAMKU PROTI DATUMU ********************************************/
+
             angular.forEach($scope.window, function (value, key) {
                 if (value.id == id) {
                     if($scope.window[id].status == false && finish === true){
@@ -28,17 +28,6 @@ angular.module('app')
                             scope: $scope
                         });
                         $scope.flipped = !$scope.flipped;
-
-                        //fixme doresit 24 - pokud ajaj tak nesmi jit otevrit
-                        if(parseInt(value.beforeSide) === 23 && parseInt(value.beforeSide) !== count){
-                            finish = false;
-                            localStorage.setItem('finish', JSON.stringify(finish));
-                        }
-                    }else if(finish === false){ //pokud jsem u 24. okynka a nebyly pred tim otevreny vsechny
-                        $ionicLoading.show({
-                            template: '<div ng-click="hide()" class="myload">'+"A máme tu problém!<span style='color:red'> :-( </span>Ty jsi určitě zapomněla otevřít každý den jedno okýnko viď? Z toho Honzík nebude mít radost. Pokud se chceš dozvědět, co se pod ním skrývá, tak se ho budeš muset zeptat sama. :-)"+'</div>',
-                            scope: $scope
-                        });
                     }
                     else{ // pokud ten den kliknu na okno vickrat
                         //console.log("dneska vickrat");
@@ -49,9 +38,9 @@ angular.module('app')
                     }
                 }
             });
-            */
-/******************************************************************************/
 
+/********************************** DATUMOVEJ ZAMEK ********************************************/
+            /*
             //pokud kliknu na okno s aktualnim(dnesnim) datumem
             if(systemTime[1] === myTime[0] && systemTime[2] === myTime[1] && systemTime[3] === myTime[2]){
                 angular.forEach($scope.window, function (value, key) {
@@ -117,6 +106,7 @@ angular.module('app')
                     }
                 });
             }
+            */
 
         };
 
